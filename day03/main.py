@@ -1,8 +1,8 @@
-def find_connection(engine_schematic, row, col):
+def find_connection(data, row, col):
     for i in range(row-1, row+2):
         for j in range(col-1, col+2):
-            if 0 <= i < len(engine_schematic) and 0 <= j < len(engine_schematic[i]) and not engine_schematic[i][j].isdigit() and engine_schematic[i][j] != '.':
-                if engine_schematic[i][j] == '*': # part 2
+            if 0 <= i < len(data) and 0 <= j < len(data[i]) and not data[i][j].isdigit() and data[i][j] != '.':
+                if data[i][j] == '*': # part 2
                     return (True, i, j)
                 return (True, -1,-1)
     return (False, -1,-1)
