@@ -20,5 +20,3 @@ dist = int("".join(data[1].split(": ")[1].split()))
 gyok1 = (time + sqrt(time ** 2 - 4 * dist)) / 2
 gyok2 = (time - sqrt(time ** 2 - 4 * dist)) / 2
 print("Part 2:", floor(gyok1) - ceil(gyok2)+1)
-
-
